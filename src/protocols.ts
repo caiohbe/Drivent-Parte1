@@ -28,3 +28,14 @@ export type RequestError = {
   name: string,
   message: string,
 };
+
+export type CreatePaymentParams = {
+  ticketId: number;
+  cardData: {
+    issuer: string;
+    number: string;
+    name: string;
+    expirationDate: string;
+    cvv: string;
+  }
+};
