@@ -8,6 +8,6 @@ ticketsRouter
   .all("/*", authenticateToken)
   .get("/types", getTicketTypes)
   .get("", getTickets)
-  .post("", createTicket);
+  .post("", createTicket)
 
-export { ticketsRouter };
+export { ticketsRouter }
